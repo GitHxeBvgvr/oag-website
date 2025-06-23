@@ -6,24 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        .avatar img {
-            max-width: 160px;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 1rem auto;
-        }
-        #main {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
         body {
             font-size: 1.1rem;
             line-height: 1.7;
         }
-        #header,
-        #titleBar {
+
+        #main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .top-banner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .avatar-square {
+            flex: 0 0 160px;
+        }
+
+        .avatar-square img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .info-block {
+            flex: 1 1 300px;
+        }
+
+        .info-block h1 {
+            margin: 0 0 0.3em;
+            font-size: 2rem;
+        }
+
+        .info-block p {
+            margin: 0.3em 0;
+        }
+
+        #header, #titleBar {
             display: none !important;
         }
     </style>
@@ -35,11 +61,20 @@
 
     <!-- Main -->
     <section id="main">
-        <header>
-            <span class="avatar"><img src="assets/images/avatar.jpg" alt="Omar A. Gonzalez headshot" /></span>
-            <h1>Omar A. Gonzalez</h1>
-            <p>Attorney at Law</p>
-        </header>
+
+        <div class="top-banner">
+            <div class="avatar-square">
+                <img src="assets/images/avatar.jpg" alt="Omar A. Gonzalez headshot" />
+            </div>
+            <div class="info-block">
+                <h1>Omar A. Gonzalez</h1>
+                <p><strong>Attorney at Law</strong></p>
+                <p>1715 Saul Kleinfeld, Suite B<br>
+                El Paso, Texas 79936</p>
+                <p>(915) 213-0947<br>
+                <a href="mailto:Gonzalez@OAGlegal.com">Gonzalez@OAGlegal.com</a></p>
+            </div>
+        </div>
 
         <section>
             <h2>About Me</h2>
@@ -62,25 +97,11 @@
         </section>
 
         <section>
-            <h2>Contact</h2>
-            <p><strong>Office:</strong><br />
-            1715 Saul Kleinfeld, Suite B<br />
-            El Paso, Texas 79936</p>
-            <p><strong>Phone:</strong> (915) 213-0947<br />
-            <strong>Email:</strong> <a href="mailto:Gonzalez@OAGlegal.com">Gonzalez@OAGlegal.com</a></p>
-        </section>
-
-        <section>
             <h2>Professional Description</h2>
             <p>I help families and individuals in El Paso protect their legacy and plan for the future through clear, practical estate and property documents.</p>
             <p>Soy un abogado bilingüe de El Paso que ayuda a familias de la frontera a preparar testamentos, poderes legales y escrituras — con atención clara, sencilla y accesible.</p>
         </section>
 
-        <footer>
-            <ul class="icons">
-                <!-- Optional social icons -->
-            </ul>
-        </footer>
     </section>
 </div>
 
