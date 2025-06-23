@@ -29,6 +29,11 @@
             flex-direction: row-reverse;
         }
 
+        .row.centered {
+            justify-content: center;
+            text-align: center;
+        }
+
         .image-block {
             flex: 0 0 220px;
         }
@@ -37,6 +42,7 @@
             width: 100%;
             height: auto;
             display: block;
+            margin: 0 auto;
         }
 
         .text-block {
@@ -82,11 +88,13 @@
     <!-- Main -->
     <section id="main">
 
-        <!-- Top Section -->
-        <div class="row">
+        <!-- Top Section (Centered) -->
+        <div class="row centered">
             <div class="image-block">
                 <img src="assets/images/avatar.jpg" alt="Omar A. Gonzalez headshot" />
             </div>
+        </div>
+        <div class="row centered">
             <div class="text-block">
                 <h1>Omar A. Gonzalez</h1>
                 <p><strong>Attorney at Law</strong></p>
