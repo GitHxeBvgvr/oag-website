@@ -25,22 +25,22 @@
             margin-bottom: 3rem;
         }
 
-        .section-row.reverse {
-            flex-direction: row-reverse;
+        .section-content {
+            flex: 1 1 100%;
+        }
+
+        .section-row.split {
+            flex-wrap: nowrap;
         }
 
         .section-image {
-            flex: 1 1 300px;
+            flex: 0 0 300px;
         }
 
         .section-image img {
             width: 100%;
             height: auto;
             display: block;
-        }
-
-        .section-content {
-            flex: 1 1 300px;
         }
 
         .section-content h2 {
@@ -69,7 +69,7 @@
     <section id="main">
 
         <!-- Intro Section: Headshot + Contact -->
-        <div class="section-row">
+        <div class="section-row split">
             <div class="section-image">
                 <img src="assets/images/avatar.jpg" alt="Omar A. Gonzalez headshot" />
             </div>
@@ -84,10 +84,7 @@
         </div>
 
         <!-- About Me -->
-        <div class="section-row reverse">
-            <div class="section-image">
-                <img src="assets/images/avatar.jpg" alt="Omar A. Gonzalez headshot repeat" />
-            </div>
+        <div class="section-row">
             <div class="section-content">
                 <h2>About Me</h2>
                 <p>I’m a bilingual attorney born and raised in El Paso, recently admitted to the Texas Bar. My practice focuses on estate planning, real estate matters, and small business formation.</p>
@@ -97,9 +94,6 @@
 
         <!-- Services -->
         <div class="section-row">
-            <div class="section-image">
-                <img src="assets/images/avatar.jpg" alt="Placeholder for services graphic" />
-            </div>
             <div class="section-content">
                 <h2>What I Do</h2>
                 <ul>
@@ -116,10 +110,7 @@
         </div>
 
         <!-- Bilingual Summary -->
-        <div class="section-row reverse">
-            <div class="section-image">
-                <img src="assets/images/avatar.jpg" alt="Bilingual legal help graphic" />
-            </div>
+        <div class="section-row">
             <div class="section-content">
                 <h2>Para la Comunidad</h2>
                 <p>Soy abogado bilingüe y nacido en El Paso. Me enfoco en ayudar a nuestra comunidad con documentos legales importantes como testamentos, poderes, y escrituras.</p>
